@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Butter_images</folder>
+	<filename>butter-pat-melting-black-cast-iron-frying-pan-butter-pat-melting-black-cast-iron-frying-pan-bubbles-117948991.jpg</filename>
+	<path>C:\Users\JackK\OneDrive\Desktop\COMP 490\Updated Pics\Butter_images\butter-pat-melting-black-cast-iron-frying-pan-butter-pat-melting-black-cast-iron-frying-pan-bubbles-117948991.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>533</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Butter</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>343</xmin>
+			<ymin>195</ymin>
+			<xmax>576</xmax>
+			<ymax>306</ymax>
+		</bndbox>
+	</object>
+</annotation>

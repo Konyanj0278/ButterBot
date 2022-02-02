@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Butter_images</folder>
+	<filename>focus-melting-butter-hot-hard-anodized-skillet-wooden-spatula-83770443.jpg</filename>
+	<path>C:\Users\JackK\OneDrive\Desktop\COMP 490\Updated Pics\Butter_images\focus-melting-butter-hot-hard-anodized-skillet-wooden-spatula-83770443.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>533</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Butter</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>269</xmin>
+			<ymin>106</ymin>
+			<xmax>549</xmax>
+			<ymax>333</ymax>
+		</bndbox>
+	</object>
+</annotation>

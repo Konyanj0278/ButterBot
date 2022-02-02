@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Butter_images</folder>
+	<filename>slice-of-butter-knife-fat-fresh-food-HKGR2D.jpg</filename>
+	<path>C:\Users\JackK\OneDrive\Desktop\COMP 490\Updated Pics\Butter_images\slice-of-butter-knife-fat-fresh-food-HKGR2D.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>956</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Butter</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>418</xmin>
+			<ymin>390</ymin>
+			<xmax>697</xmax>
+			<ymax>528</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Butter_images</folder>
+	<filename>10.jpg</filename>
+	<path>C:\Users\JackK\OneDrive\Desktop\COMP 490\Updated Pics\Butter_images\10.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>270</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Butter</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>136</xmin>
+			<ymin>39</ymin>
+			<xmax>240</xmax>
+			<ymax>127</ymax>
+		</bndbox>
+	</object>
+</annotation>
