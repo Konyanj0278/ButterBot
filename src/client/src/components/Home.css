@@ -1,0 +1,28 @@
+.homeCont{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 600px;
+    background: whitesmoke;
+    border-radius: 25px;
+    border-color: #D22030;
+    border-style: solid;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+    padding: 50px;
+}
+
+.homeWrapper{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height:  500px;
+    flex-direction: column;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}

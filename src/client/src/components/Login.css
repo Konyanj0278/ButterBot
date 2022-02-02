@@ -1,0 +1,41 @@
+.loginContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    max-width: 50%;
+    max-height: 70%;
+    background: whitesmoke;
+    border-radius: 25px;
+    border-color: #D22030;
+    border-style: solid;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+
+    overflow-y: auto;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+label, input , button{
+    margin: 2%;
+}
+
+.btn {
+    font-size: large;
+    color: white;
+    box-shadow: none;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 500px;
+    background-color: #D22030;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.27s;
+    margin: 8px;
+    user-select: none;
+  }
+
+.btn:hover {
+    background-color: #911620;
+}
