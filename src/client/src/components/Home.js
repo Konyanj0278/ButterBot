@@ -7,6 +7,11 @@ export default function Home() {
 
     const [dataLast, setDataLast] = React.useState(null);
     const url = "http://localhost:3001/api/Home"
+    const urlrun = "http://localhost:3001/api/Home/Run"
+
+    function run() {
+      axios.get(urlrun)
+    }
 
     React.useEffect(() => {
       axios.get(url).then((response) => {
@@ -52,6 +57,7 @@ export default function Home() {
                   </tr>
                     </tbody>
                 </table>
+                <button onClick={run}>Run</button>
                 
             </div>
         </div>

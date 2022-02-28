@@ -8,6 +8,8 @@ const saltRounds = 10;
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
+const { spawn } = require('child_process')
+
 app.use(cors({
     origin: ["http://localhost:3000"],
     methods: ["GET", "POST"],
@@ -16,19 +18,6 @@ app.use(cors({
 
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
-
-
-//   app.use(cookieParser());  
-// app.use(session ({
-//     key: "userId",
-//     secret: "formula",
-//     resave: false,
-//     saveUninitialized: false,
-//     cookie: {
-//       expires: 60 * 60 * 24 * 1000,
-//     }
-//   }))
-
 
 const db = mysql.createPool({
     host: 'sql3.freemysqlhosting.net',
@@ -44,7 +33,21 @@ const db2 = mysql.createPool({
     database: 'sql3445783',
 });
 
-//DUE TO PLACEHOLDERS (?) WE CAN AVOID SQL INJECTION ATTACKS
+app.get('/api/Home/Run', (req, res) => {
+    const childPython = spawn('python', ['ButterBot.py']);
+ 
+    childPython.stdout.on('data', (data) => {
+       console.log(`stdout: ${data}`)
+    });
+ 
+    childPython.stderr.on('data', (data) => {
+       console.error(`stderr: ${data}`);
+    });
+ 
+    childPython.on('close', (code) => {
+       console.log(`child process exited with code ${code}`);
+    });
+ });
 
 app.get('/api/Home', (req, res)=>{
     const sqlLatest = "SELECT * FROM Runs ORDER BY Date_ran DESC LIMIT 3";
