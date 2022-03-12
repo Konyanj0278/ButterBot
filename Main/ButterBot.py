@@ -21,3 +21,9 @@ while(detected==False):
         
 
 print(Results)
+distance=checkdist()*100
+start_time=time.time()
+while(distance>15.00):
+    print(distance)
+    movement_start('backward', 'no',.1)
+    distance=checkdist()*100
