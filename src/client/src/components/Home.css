@@ -1,14 +1,16 @@
 .homeCont{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
-    width: 600px;
-    background: whitesmoke;
+    margin-top: 5%;
+    width: 800px;
+    background: rgb(251, 255, 199);
     border-radius: 25px;
-    border-color: #D22030;
+    border-color: #fffb1c;
     border-style: solid;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
     padding: 50px;
+    font-family: Tahoma, sans-serif;
+    
 }
 
 .homeWrapper{
@@ -19,10 +21,40 @@
     flex-direction: column;
 }
 
+img.rmlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 35%;
+  }
+  
+
 th {
     padding: 10px;
+    font-size: 18px;
 }
 
 td {
     padding: 10px;
+    font-size: 17px;
 }
+
+.btn {
+    font-size: large;
+    color: white;
+    box-shadow: none;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 500px;
+    background-color: #080203;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.27s;
+    margin: 8px;
+    user-select: none;
+  }
+
+  :disabled {
+    background-color: pink;
+  }

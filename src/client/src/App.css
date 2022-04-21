@@ -1,11 +1,12 @@
 .App {
-  background-color: white;
+  background-color: rgb(153, 231, 8);
   position: fixed;
   height: 100%;
   width: 88%;
   left: 50%;
   transform: translate(-50%, 0);
 }
+
 
 img.ECSlogo{
   display: block;

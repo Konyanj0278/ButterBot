@@ -19,13 +19,6 @@ app.use(cors({
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
-const db = mysql.createPool({
-    host: 'sql3.freemysqlhosting.net',
-    user: 'sql3458152',
-    password: 'XBiL5k9i1J',
-    database: 'sql3458152',
-});
-
 const db2 = mysql.createPool({
     host: 'sql3.freemysqlhosting.net',
     user: 'sql3445783',
