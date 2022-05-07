@@ -20,15 +20,31 @@ export default function Home() {
 
   let [loading, setLoading] = useState(false);
 
-  
-
   function run() {
-    setLoading(true)
+    setLoading(!loading)
     document.querySelector('#mybtn').disabled = true
-    axios.get(urlrun)
-  }
+    axios.get(urlrun).then((response) => {
+      // Code is a little weird, but what's happening here ...
+      // is that once the client gets the response from python spitting out code (0 or 1)
+      // it will pause for 5 seconds to give time for robot to send data to db and refresh the page
+      // (you can change the 5000 to something else to increase/decrease delay)
+      // instead of displaying successful/unsuccessful, we will know if it's successful by seeing a new row of data
+      if (response.data.success == "true") {
+        document.querySelector('#mybtn').disabled = false
+        setTimeout(function(){
+          window.location.reload(true);
+        }, 5000);
+      }
+      else {
+        document.querySelector('#mybtn').disabled = false
+        setTimeout(function(){
+          document.querySelector('#mybtn').disabled = false
+          window.location.reload(true);
+        }, 5000);
+      }
+    });
 
-  
+  }
 
 
   React.useEffect(() => {
