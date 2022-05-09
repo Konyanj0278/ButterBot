@@ -56,6 +56,10 @@ export default function Home() {
   if (!dataLast)
   return null;
 
+  var d1 = new Date(dataLast[0].Date_ran);
+  var d2 = new Date(dataLast[1].Date_ran);
+  var d3 = new Date(dataLast[2].Date_ran);
+
   return (
     <div>
       <img alt="Rick and Morty" src={logo} className="rmlogo" />
@@ -68,26 +72,26 @@ export default function Home() {
               <tr>
                 <th>Date</th>
                 <th>Butter Location</th>
-                <th>Robot Location</th>
-                <th>Distance to Butter</th>
+                <th>Initial Distance</th>
+                <th>Distance To Grab</th>
               </tr>
               <tr>
-                <td>{dataLast[0].Date_ran}</td>
-                <td>{dataLast[0].Object_Location}</td>
-                <td>{dataLast[0].Intial_Distance}</td>
-                <td>{dataLast[0].Distance_To_Grab}</td>
+                <td>{d1.toLocaleDateString('en-US')}<br></br>{d1.toLocaleTimeString('en-US')}</td>
+                <td>{dataLast[0].Object_Location} px</td>
+                <td>{dataLast[0].Intial_Distance} cm</td>
+                <td>{dataLast[0].Distance_To_Grab} cm</td>
               </tr>
               <tr>
-                <td>{dataLast[1].Date_ran}</td>
-                <td>{dataLast[1].Object_Location}</td>
-                <td>{dataLast[1].Intial_Distance}</td>
-                <td>{dataLast[1].Distance_To_Grab}</td>
+                <td>{d2.toLocaleDateString('en-US')}<br></br>{d2.toLocaleTimeString('en-US')}</td>
+                <td>{dataLast[1].Object_Location} px</td>
+                <td>{dataLast[1].Intial_Distance} cm</td>
+                <td>{dataLast[1].Distance_To_Grab} cm</td>
               </tr>
               <tr>
-                <td>{dataLast[2].Date_ran}</td>
-                <td>{dataLast[2].Object_Location}</td>
-                <td>{dataLast[2].Intial_Distance}</td>
-                <td>{dataLast[2].Distance_To_Grab}</td>
+                <td>{d3.toLocaleDateString('en-US')}<br></br>{d3.toLocaleTimeString('en-US')}</td>
+                <td>{dataLast[2].Object_Location} px</td>
+                <td>{dataLast[2].Intial_Distance} cm</td>
+                <td>{dataLast[2].Distance_To_Grab} cm</td>
               </tr>
             </tbody>
           </table>
