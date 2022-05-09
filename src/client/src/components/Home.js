@@ -1,6 +1,6 @@
 
 import './Home.css'
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import logo from '../rmlogo.jpg';
 
@@ -29,7 +29,7 @@ export default function Home() {
       // it will pause for 5 seconds to give time for robot to send data to db and refresh the page
       // (you can change the 5000 to something else to increase/decrease delay)
       // instead of displaying successful/unsuccessful, we will know if it's successful by seeing a new row of data
-      if (response.data.success == "true") {
+      if (response.data.success === "true") {
         document.querySelector('#mybtn').disabled = false
         setTimeout(function(){
           window.location.reload(true);
@@ -73,21 +73,21 @@ export default function Home() {
               </tr>
               <tr>
                 <td>{dataLast[0].Date_ran}</td>
-                <td>{dataLast[0].Butter_Location}</td>
-                <td>{dataLast[0].Robot_Location}</td>
-                <td>{dataLast[0].Distance_to_butter}</td>
+                <td>{dataLast[0].Object_Location}</td>
+                <td>{dataLast[0].Intial_Distance}</td>
+                <td>{dataLast[0].Distance_To_Grab}</td>
               </tr>
               <tr>
                 <td>{dataLast[1].Date_ran}</td>
-                <td>{dataLast[1].Butter_Location}</td>
-                <td>{dataLast[1].Robot_Location}</td>
-                <td>{dataLast[1].Distance_to_butter}</td>
+                <td>{dataLast[1].Object_Location}</td>
+                <td>{dataLast[1].Intial_Distance}</td>
+                <td>{dataLast[1].Distance_To_Grab}</td>
               </tr>
               <tr>
                 <td>{dataLast[2].Date_ran}</td>
-                <td>{dataLast[2].Butter_Location}</td>
-                <td>{dataLast[2].Robot_Location}</td>
-                <td>{dataLast[2].Distance_to_butter}</td>
+                <td>{dataLast[2].Object_Location}</td>
+                <td>{dataLast[2].Intial_Distance}</td>
+                <td>{dataLast[2].Distance_To_Grab}</td>
               </tr>
             </tbody>
           </table>
